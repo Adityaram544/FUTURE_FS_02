@@ -143,7 +143,7 @@ export default function AnalyticsPage() {
   const [loading,      setLoading]      = useState(true);
 
   useEffect(() => {
-    api.get('/leads/stats/summary')
+    api.get('/api/leads/stats/summary')
       .then(r => setStats(r.data.data))
       .catch(() => {})
       .finally(() => setLoading(false));
