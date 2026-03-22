@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# env files (VERY IMPORTANT)
+.env
+backend/.env
+frontend/.env
+
+# logs
+*.log
+
+# OS files
+.DS_Store
+
+# build files
+frontend/build/
+
+# optional (good practice)
+dist/
+coverage/
