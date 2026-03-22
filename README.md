@@ -17,9 +17,6 @@ Track leads · Manage contacts · Visualise analytics · Close more deals
 [![JWT](https://img.shields.io/badge/Auth-JWT-000000?style=flat-square&logo=jsonwebtokens)](https://jwt.io)
 
 <br/>
-
-![Dashboard Preview](https://via.placeholder.com/900x500/0f1117/3b82f6?text=CRMPro+Dashboard)
-
 </div>
 
 ---
@@ -30,11 +27,19 @@ CRMPro is a production-ready **Lead Management CRM** that helps you capture, tra
 
 ---
 
-## 🖥️ Screenshots
+## 📸 Screenshots
 
-| Dashboard | Leads | Analytics |
-|-----------|-------|-----------|
-| Stat cards, sparkline chart, pipeline progress bars | Full table with search, filter, add/edit/delete | Date & source filters, live charts |
+| Login (Auth) | Dashboard (Light) |
+|:---:|:---:|
+| ![Sign In](assets/login.png) | ![Light Dashboard](assets/dashboard-bright.png) |
+
+| Dashboard (Dark) | Leads |
+|:---:|:---:|
+| ![Dark Dashboard](assets/dashboard-dark.png) | ![Leads](assets/leads.png) |
+
+| Contacts | Analytics |
+|:---:|:---:|
+| ![Contacts](assets/contacts.png) | ![Analytics](assets/analytics.png) |
 
 ---
 
@@ -330,16 +335,8 @@ app.get('*', (req, res) =>
 
 ---
 
-## 📄 License
-
-MIT © 2026 — Free to use, modify, and distribute.
-
----
-
 <div align="center">
 
 Built with ❤️ using the MERN stack
-
-**[⬆ Back to top](#)**
 
 </div>
