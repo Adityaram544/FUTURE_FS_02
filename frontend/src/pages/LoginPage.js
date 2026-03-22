@@ -39,11 +39,11 @@ export default function LoginPage() {
       width: 44, height: 44, borderRadius: 12,
       background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
-      fontFamily: 'Syne, sans-serif', fontWeight: 800, color: '#fff', fontSize: 20,
+      fontFamily: 'Inter, sans-serif', fontWeight: 800, color: '#fff', fontSize: 20,
       margin: '0 auto 20px',
     },
     title: {
-      fontFamily: 'Syne, sans-serif', fontSize: 24, fontWeight: 800,
+      fontFamily: 'Inter, sans-serif', fontSize: 24, fontWeight: 800,
       textAlign: 'center', letterSpacing: '-.03em',
       color: 'var(--text-1)', marginBottom: 6,
     },

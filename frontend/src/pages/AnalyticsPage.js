@@ -111,7 +111,7 @@ const Kpi = ({ label, value, color, sub }) => (
     borderRadius: 12, padding: '16px 14px', textAlign: 'center',
   }}>
     <div style={{ fontSize: 11, color: 'var(--text-2)', marginBottom: 6, fontWeight: 500 }}>{label}</div>
-    <div style={{ fontFamily: 'Syne,sans-serif', fontSize: 24, fontWeight: 800, color, letterSpacing: '-.03em', lineHeight: 1 }}>{value}</div>
+    <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 24, fontWeight: 800, color, letterSpacing: '-.03em', lineHeight: 1 }}>{value}</div>
     {sub && <div style={{ fontSize: 10, color: 'var(--text-3)', marginTop: 4 }}>{sub}</div>}
   </div>
 );
@@ -121,7 +121,7 @@ const ChartBox = ({ title, height = 220, children }) => (
     background: 'var(--bg-surface)', border: '1px solid var(--border)',
     borderRadius: 14, padding: '18px 20px',
   }}>
-    <div style={{ fontFamily: 'Syne,sans-serif', fontSize: 14, fontWeight: 700, marginBottom: 14, color: 'var(--text-1)' }}>
+    <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 700, marginBottom: 14, color: 'var(--text-1)' }}>
       {title}
     </div>
     <div style={{ height, position: 'relative' }}>{children}</div>

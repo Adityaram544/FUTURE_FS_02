@@ -52,7 +52,7 @@ export default function ContactsPage() {
             <div className="contacts-stat-text">
               <div style={{ fontSize: 12, color: 'var(--text-2)', fontWeight: 500 }}>{label}</div>
               <div style={{
-                fontFamily: 'Syne, sans-serif', fontSize: 24, fontWeight: 800,
+                fontFamily: 'Inter,sans-serif', fontSize: 24, fontWeight: 800,
                 color: tab === key ? color : 'var(--text-1)',
                 letterSpacing: '-.03em', lineHeight: 1.1,
               }}>

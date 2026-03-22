@@ -43,7 +43,7 @@ const StatCard = ({ label, value, icon, grad, sub, onClick, accent }) => (
       <div style={{ width:40, height:40, borderRadius:11, background:grad, display:'flex', alignItems:'center', justifyContent:'center', fontSize:18, boxShadow:`0 4px 14px ${accent}40` }}>{icon}</div>
       <span style={{ fontSize:10, color:'var(--text-3)', fontWeight:600, letterSpacing:'.06em', textTransform:'uppercase', marginTop:4 }}>{label}</span>
     </div>
-    <div style={{ fontFamily:'Syne,sans-serif', fontSize:36, fontWeight:800, color:'var(--text-1)', letterSpacing:'-.04em', lineHeight:1, marginBottom:6 }}>{value??'—'}</div>
+    <div style={{ fontFamily:'Inter,sans-serif', fontSize:36, fontWeight:800, color:'var(--text-1)', letterSpacing:'-.04em', lineHeight:1, marginBottom:6 }}>{value??'—'}</div>
     <div style={{ fontSize:11, color:accent, fontWeight:500 }}>{sub}</div>
     <div style={{ position:'absolute', bottom:0, left:0, right:0, height:3, background:grad, opacity:.6 }} />
   </div>
@@ -108,11 +108,11 @@ export default function DashboardPage() {
         <div className="db-spark-card" style={{ background:'var(--bg-surface)', border:'1px solid var(--border)', borderRadius:16, padding:'20px 22px', display:'flex', flexDirection:'column' }}>
           <div style={{ display:'flex', alignItems:'flex-start', justifyContent:'space-between', marginBottom:6 }}>
             <div>
-              <div style={{ fontFamily:'Syne,sans-serif', fontSize:15, fontWeight:700, color:'var(--text-1)' }}>Lead activity</div>
+              <div style={{ fontFamily:'Inter,sans-serif', fontSize:15, fontWeight:700, color:'var(--text-1)' }}>Lead activity</div>
               <div style={{ fontSize:11, color:'var(--text-3)', marginTop:2 }}>Last 7 days</div>
             </div>
             <div style={{ textAlign:'right' }}>
-              <div style={{ fontFamily:'Syne,sans-serif', fontSize:22, fontWeight:800, color:'var(--blue)', letterSpacing:'-.03em' }}>{weekTotal}</div>
+              <div style={{ fontFamily:'Inter,sans-serif', fontSize:22, fontWeight:800, color:'var(--blue)', letterSpacing:'-.03em' }}>{weekTotal}</div>
               <div style={{ fontSize:10, color:'var(--text-3)' }}>this week</div>
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function DashboardPage() {
         {/* Pipeline + quick stats */}
         <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
           <div style={{ background:'var(--bg-surface)', border:'1px solid var(--border)', borderRadius:16, padding:'18px 20px', flex:1 }}>
-            <div style={{ fontFamily:'Syne,sans-serif', fontSize:14, fontWeight:700, color:'var(--text-1)', marginBottom:16 }}>Pipeline overview</div>
+            <div style={{ fontFamily:'Inter,sans-serif', fontSize:14, fontWeight:700, color:'var(--text-1)', marginBottom:16 }}>Pipeline overview</div>
             {[
               { label:'New',       value:newLeads,  color:'#3b82f6' },
               { label:'Contacted', value:contacted, color:'#8b5cf6' },
@@ -165,7 +165,7 @@ export default function DashboardPage() {
             ].map(({ label, value, color, icon }) => (
               <div key={label} style={{ background:'var(--bg-surface)', border:'1px solid var(--border)', borderRadius:12, padding:'14px 16px' }}>
                 <div style={{ fontSize:18, marginBottom:6 }}>{icon}</div>
-                <div style={{ fontFamily:'Syne,sans-serif', fontSize:22, fontWeight:800, color, letterSpacing:'-.03em', lineHeight:1 }}>{value}</div>
+                <div style={{ fontFamily:'Inter,sans-serif', fontSize:22, fontWeight:800, color, letterSpacing:'-.03em', lineHeight:1 }}>{value}</div>
                 <div style={{ fontSize:11, color:'var(--text-3)', marginTop:4, fontWeight:500 }}>{label}</div>
               </div>
             ))}
@@ -177,7 +177,7 @@ export default function DashboardPage() {
       <div style={{ background:'var(--bg-surface)', border:'1px solid var(--border)', borderRadius:16, overflow:'hidden' }}>
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'16px 20px 14px', borderBottom:'1px solid var(--border)' }}>
           <div>
-            <div style={{ fontFamily:'Syne,sans-serif', fontSize:15, fontWeight:700, color:'var(--text-1)' }}>Recent Leads</div>
+            <div style={{ fontFamily:'Inter,sans-serif', fontSize:15, fontWeight:700, color:'var(--text-1)' }}>Recent Leads</div>
             <div style={{ fontSize:11, color:'var(--text-3)', marginTop:2 }}>Latest entries across all statuses</div>
           </div>
           <button onClick={() => navigate('/leads')} style={{ fontSize:12, color:'var(--blue)', background:'rgba(59,130,246,.08)', border:'1px solid rgba(59,130,246,.2)', borderRadius:20, padding:'5px 14px', cursor:'pointer', fontFamily:'Inter,sans-serif', fontWeight:500 }}>
