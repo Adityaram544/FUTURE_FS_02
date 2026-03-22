@@ -15,7 +15,7 @@ export const useLeads = (filters = {}) => {
       if (filters.search) p.append('search', filters.search);
       p.append('page',  filters.page  || 1);
       p.append('limit', filters.limit || 10);
-      const { data } = await api.get(`/leads?${p}`);
+      const { data } = await api.get(`/api/leads?${p}`);
       setLeads(data.data);
       setPagination(data.pagination);
     } catch {
@@ -28,25 +28,25 @@ export const useLeads = (filters = {}) => {
   useEffect(() => { fetchLeads(); }, [fetchLeads]);
 
   const createLead = async body => {
-    await api.post('/leads', body);
+    await api.post('/api/leads', body);
     toast.success('Lead created!');
     fetchLeads();
   };
 
   const updateLead = async (id, body) => {
-    await api.put(`/leads/${id}`, body);
+    await api.put(`/api/leads/${id}`, body);
     toast.success('Lead updated!');
     fetchLeads();
   };
 
   const deleteLead = async id => {
-    await api.delete(`/leads/${id}`);
+    await api.delete(`/api/leads/${id}`);
     toast.success('Lead deleted!');
     fetchLeads();
   };
 
   const addNote = async (id, text) => {
-    await api.post(`/leads/${id}/notes`, { text });
+    await api.post(`/api/leads/${id}/notes`, { text });
     toast.success('Note added!');
     fetchLeads();
   };
@@ -59,7 +59,7 @@ export const useStats = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    api.get('/leads/stats/summary')
+    api.get('/api/leads/stats/summary')
       .then(r => setStats(r.data.data))
       .catch(() => {})
       .finally(() => setLoading(false));
